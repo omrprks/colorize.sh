@@ -12,5 +12,5 @@ function colorize {
 
   local END="\033[0m"
 
-  echo "${!1}${2}${END}"
+  echo "${!1}${@:2}${END}"
 }
